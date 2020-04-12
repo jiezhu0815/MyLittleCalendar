@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyLittleCalendar.App">
+    <Application.Resources>
+
+        <OnPlatform x:TypeArguments="x:String" x:Key="TitleFontFamily">
+            <On Platform="Android" Value="FORTE.TTF#Forte" />
+            <On Platform="iOS" Value="FORTE" />
+        </OnPlatform>
+
+        <!--BackgroundGradients-->
+        <Color x:Key="BackgroundGradientStartColor">#A5CFE8</Color>
+        <Color x:Key="BackgroundGradientMidColor">#D6E9F5</Color>
+        <Color x:Key="BackgroundGradientEndColor">#4AC4C3</Color>
+
+
+        <Style x:Key="SubTitleStyle" TargetType="Label">
+
+            <Setter Property="FontFamily" Value="{StaticResource TitleFontFamily}" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="White" />
+
+        </Style>
+
+        <OnPlatform x:Key="BodyFontFamily" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Questrial" />
+            <On Platform="Android" Value="Questrial-Regular.ttf#Questrial" />
+        </OnPlatform>
+        
+        <Style x:Key="SubtitleText" TargetType="Label">
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontFamily" Value="{StaticResource BodyFontFamily}" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+        
+        
+    </Application.Resources>
+</Application>

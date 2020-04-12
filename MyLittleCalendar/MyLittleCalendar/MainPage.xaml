@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows" 
+             x:Class="MyLittleCalendar.MainPage">
+
+    <Grid rainbows:DebugRainbow.ShowColors="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <skia:SKCanvasView x:Name="BackgroundGradient" Grid.RowSpan="7" Grid.ColumnSpan="3" HorizontalOptions="Fill" PaintSurface="BackgroundGradient_PaintSurface" VerticalOptions="Fill" />
+
+        <Image Grid.ColumnSpan="3" HorizontalOptions="Center"  Source="title"/>
+        <!--<Label x:Name="subtitle" Grid.ColumnSpan="2" TranslationY="70"  HorizontalOptions="Center" VerticalOptions="Center" Text="- drag and drop to create my first canlendar -" HeightRequest="60" WidthRequest="370" 
+               Style="{StaticResource SubtitleText}"/>-->
+        <Image x:Name="subtitle" Grid.ColumnSpan="3" TranslationY="42"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="370" 
+               Source="subtitle"/>
+
+        <!--<BoxView Grid.ColumnSpan="3" HeightRequest="1" TranslationY="95" HorizontalOptions="Center" VerticalOptions="Start" Color="White" WidthRequest="400"/>-->
+        <Image Margin="5,0,5,45" TranslationY="10" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Source="framelace" Aspect="Fill" HeightRequest="335" WidthRequest="76"/>
+        <!--<Label HorizontalOptions="Start" VerticalOptions="Center" Text="test" HeightRequest="200" WidthRequest="100" BackgroundColor="Red"/>-->
+        <StackLayout Grid.Column="1" Margin="45,32,0,0" Grid.Row="1" Grid.RowSpan="2" Orientation="Vertical" Spacing="0">
+
+        <Image Margin="3,0,0,0" HorizontalOptions="Start" VerticalOptions="Start" Source="Month" Aspect="AspectFit" HeightRequest="25" WidthRequest="65"/>
+
+            <Image  Margin="3,21,0,0" HorizontalOptions="Start"  Source="Day" Aspect="AspectFit" HeightRequest="25" WidthRequest="45"/>
+
+            <Image  Margin="3,21,0,0" HorizontalOptions="Start"  Source="Year" Aspect="AspectFit" HeightRequest="25" WidthRequest="45"/>
+            <Image  Margin="3,21,0,0" HorizontalOptions="Start"  Source="WeekDay" Aspect="AspectFit" HeightRequest="25" WidthRequest="80"/>
+            <Image  Margin="3,21,0,0"  HorizontalOptions="Start"  Source="Season" Aspect="AspectFit" HeightRequest="25" WidthRequest="65"/>
+            <Image  Margin="3,40,0,0" HorizontalOptions="Start"  Source="Weather" Aspect="AspectFit" HeightRequest="25" WidthRequest="80"/>
+        </StackLayout>
+
+        <!-- weekday -->
+        <Frame VerticalOptions="Start" HasShadow="True" CornerRadius="15" Grid.Row="1"  Margin="10,25,0,0"  HeightRequest="165" Padding="0" Opacity=".8">
+            <StackLayout  BackgroundColor="#5DB0C9">
+                <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="WeekDays" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
+                <BoxView HeightRequest="1" BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame VerticalOptions="Start" TranslationY="159" HasShadow="True" CornerRadius="15" Grid.Row="1"  Margin="10,35,0,0"  HeightRequest="347" Padding="0" Opacity=".8">
+            <StackLayout  BackgroundColor="#5DB0C9">
+                <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="Months" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
+                <BoxView HeightRequest="1" BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+
+
+
+        <Frame VerticalOptions="Start" HasShadow="True" CornerRadius="15" Grid.Row="1" Grid.Column="2" Margin="0,20,10,0"  HeightRequest="320" Padding="0" Opacity=".8">
+            <StackLayout  BackgroundColor="#5DB0C9" Padding="0">
+                <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="Seasons" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
+                <BoxView HeightRequest="1" BackgroundColor="White"/>
+                <Frame BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HasShadow="True" CornerRadius="10" Padding="0">
+                    <Image  Source="spring" Aspect="Fill" />
+                </Frame>
+                <Frame VerticalOptions="Start" HasShadow="True" CornerRadius="10" Padding="0">
+                    <Image  Source="summer" Aspect="Fill"/>
+                </Frame>
+                <Frame VerticalOptions="Start" HasShadow="True" CornerRadius="10" Padding="0">
+                    <Image  Source="fall" Aspect="Fill" />
+                    <Frame.GestureRecognizers>
+                        <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Frame VerticalOptions="Start" HasShadow="True" CornerRadius="10" Padding="0">
+                    <Image  Source="winter" Aspect="Fill" />
+                </Frame>
+            </StackLayout>
+        </Frame>
+
+        <Frame  TranslationY="345" Margin="0,0,10,0"  VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="15" Grid.Row="1" Grid.Column="2" HeightRequest="192" WidthRequest="140" Padding="0" Opacity=".8">
+            <StackLayout  BackgroundColor="#5DB0C9">
+                <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="Weather2" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
+                <BoxView HeightRequest="1" BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+
+
+        <Frame VerticalOptions="Start" TranslationY="320" HasShadow="True" CornerRadius="15" Grid.Row="1" Grid.Column="1"  Margin="20,35,10,0"  HeightRequest="90" Padding="0" Opacity=".8">
+            <StackLayout  BackgroundColor="#5DB0C9">
+                <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="Days" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
+                <BoxView HeightRequest="1" BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+        <Frame VerticalOptions="Start" TranslationY="413" HasShadow="True" CornerRadius="15" Grid.Row="1" Grid.Column="1"  Margin="20,35,10,0"  HeightRequest="90" Padding="0" Opacity=".8">
+            <StackLayout  BackgroundColor="#5DB0C9">
+                <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="Years" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
+                <BoxView HeightRequest="1" BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>
