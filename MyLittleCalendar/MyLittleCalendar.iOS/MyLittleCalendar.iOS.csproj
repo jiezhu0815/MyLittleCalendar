@@ -123,7 +123,10 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>3.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
     <PackageReference Include="Xamarin.Forms.DebugRainbows">
       <Version>1.1.4</Version>
@@ -549,5 +552,50 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\num9%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cloudy%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cloudy%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rain%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rain%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Snow%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Snow%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sunny%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sunny%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PartlySunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PartlySunny%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PartlySunny%403x.png" />
   </ItemGroup>
 </Project>

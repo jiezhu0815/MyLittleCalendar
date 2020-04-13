@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
 namespace MyLittleCalendar.iOS
@@ -33,6 +34,8 @@ namespace MyLittleCalendar.iOS
             }
 
             global::Xamarin.Forms.Forms.Init();
+
+            AnimationViewRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
