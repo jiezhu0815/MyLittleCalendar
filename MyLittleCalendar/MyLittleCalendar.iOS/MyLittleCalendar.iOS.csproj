@@ -289,4 +289,265 @@
   <ItemGroup>
     <BundleResource Include="Resources\winter%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\April.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\April%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\April%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\August.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\August%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\August%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\December%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\December.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\December%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\February.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\February%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\February%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Friday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Friday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Friday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\January.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\January%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\January%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\July.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\July%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\July%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\June.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\June%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\June%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\March.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\March%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\March%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\May.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\May%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\May%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Monday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Monday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Monday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\November.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\November%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\November%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\October%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\October.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\October%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Saturday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Saturday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Saturday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\September.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\September%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\September%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sunday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sunday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sunday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Thursday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Thursday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Thursday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tuesday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tuesday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tuesday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wednesday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wednesday%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wednesday%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num0%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num0%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num1%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num1%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num2%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num2%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num3%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num3%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num4%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num4%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num5%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num5%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num6%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num6%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num7%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num7%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num8%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num8%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num9%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\num9%403x.png" />
+  </ItemGroup>
 </Project>

@@ -93,7 +93,9 @@ namespace MyLittleCalendar
         private void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
         {
             View view = sender as View;
+            //var parent = (VisualElement)view.Parent;
 
+            movableItems.RaiseChild(view);
 
             switch (e.StatusType)
             {
@@ -101,11 +103,18 @@ namespace MyLittleCalendar
                 case GestureStatus.Running:
                 case GestureStatus.Completed:
 
-                    view.TranslationX = view.TranslationX + e.TotalX;
-                    view.TranslationY = view.TranslationY+e.TotalY;
+
+                    view.TranslationX = Math.Max(movableItems.X - view.X + 10, Math.Min(movableItems.X + movableItems.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
+                    view.TranslationY = Math.Max(movableItems.Y - view.Y + 100, Math.Min(movableItems.Y + movableItems.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
+
+                    /*
+                    view.TranslationX = Math.Max(parent.X - view.X + 10, Math.Min(parent.X + parent.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
+                    view.TranslationY = Math.Max(parent.Y - view.Y + 100, Math.Min(parent.Y + parent.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
+                    */
                     break;
 
             }
         }
+
     }
 }
