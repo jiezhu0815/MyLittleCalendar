@@ -29,7 +29,9 @@
         
         <skia:SKCanvasView x:Name="BackgroundGradient" Grid.RowSpan="7" Grid.ColumnSpan="3" HorizontalOptions="Fill" PaintSurface="BackgroundGradient_PaintSurface" VerticalOptions="Fill" />
 
-        <Image Grid.ColumnSpan="3" HorizontalOptions="Center"  Source="title"/>
+        <Image Grid.ColumnSpan="3" HorizontalOptions="Center"  Source="title" TranslationX="-15"/>
+
+
         <!--<Label x:Name="subtitle" Grid.ColumnSpan="2" TranslationY="70"  HorizontalOptions="Center" VerticalOptions="Center" Text="- drag and drop to create my first canlendar -" HeightRequest="60" WidthRequest="370" 
                Style="{StaticResource SubtitleText}"/>-->
         <Image x:Name="subtitle" Grid.ColumnSpan="3" TranslationY="42"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="370" 
@@ -111,28 +113,28 @@
         <Grid Opacity="1" x:Name="movableItems" BackgroundColor="Transparent" Grid.RowSpan="7" Grid.ColumnSpan="3"  rainbows:DebugRainbow.ShowColors="False">
 
             <!--seasons-->
-            <Frame TranslationX="-10" TranslationY="126" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0"  WidthRequest="100" HeightRequest="60" >
+            <Frame x:Name="spring" TranslationX="-10" TranslationY="126" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0"  WidthRequest="100" HeightRequest="60" >
                 <Image  Source="spring" Aspect="Fill" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="-10" TranslationY="190" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="60">
+            <Frame x:Name="summer" TranslationX="-10" TranslationY="190" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="60">
                 <Image  Source="summer" Aspect="Fill" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="-10" TranslationY="254" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="60">
+            <Frame x:Name="fall" TranslationX="-10" TranslationY="254" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="60">
                 <Image  Source="fall" Aspect="Fill" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="-10" TranslationY="318" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="60">
+            <Frame x:Name="winter"  TranslationX="-10" TranslationY="318" BorderColor="#EE5F80"  IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="60">
                 <Image  Source="winter" Aspect="Fill" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
@@ -142,74 +144,74 @@
 
             <!--Month-->
 
-            <Frame  TranslationX="10" TranslationY="130" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="january" TranslationX="10" TranslationY="130" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="January" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="10" TranslationY="160" Padding="5" BorderColor="#EE5F80" BackgroundColor="YellowGreen" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="february" TranslationX="10" TranslationY="160" Padding="5" BorderColor="#EE5F80" BackgroundColor="YellowGreen" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="February" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="190" Padding="5" BorderColor="#EE5F80" BackgroundColor="Yellow" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="march" TranslationX="10" TranslationY="190" Padding="5" BorderColor="#EE5F80" BackgroundColor="Yellow" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="March" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="220" Padding="5" BorderColor="#EE5F80" BackgroundColor="Green" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="april" TranslationX="10" TranslationY="220" Padding="5" BorderColor="#EE5F80" BackgroundColor="Green" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="April" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="250" Padding="5" BorderColor="#EE5F80" BackgroundColor="Pink" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="may" TranslationX="10" TranslationY="250" Padding="5" BorderColor="#EE5F80" BackgroundColor="Pink" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="May" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="280" Padding="5" BorderColor="#EE5F80" BackgroundColor="Purple" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="june" TranslationX="10" TranslationY="280" Padding="5" BorderColor="#EE5F80" BackgroundColor="Purple" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="June" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="310" Padding="5" BorderColor="#EE5F80" BackgroundColor="Orange" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="july" TranslationX="10" TranslationY="310" Padding="5" BorderColor="#EE5F80" BackgroundColor="Orange" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="July" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="340" Padding="5" BorderColor="#EE5F80" BackgroundColor="LightSeaGreen" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="august" TranslationX="10" TranslationY="340" Padding="5" BorderColor="#EE5F80" BackgroundColor="LightSeaGreen" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="August" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="370" Padding="5" BorderColor="#EE5F80" BackgroundColor="GreenYellow" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="september" TranslationX="10" TranslationY="370" Padding="5" BorderColor="#EE5F80" BackgroundColor="GreenYellow" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="September" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="400" Padding="5" BorderColor="#EE5F80" BackgroundColor="RosyBrown" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="october" TranslationX="10" TranslationY="400" Padding="5" BorderColor="#EE5F80" BackgroundColor="RosyBrown" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="October" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="430" Padding="5" BorderColor="#EE5F80" BackgroundColor="CadetBlue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="november" TranslationX="10" TranslationY="430" Padding="5" BorderColor="#EE5F80" BackgroundColor="CadetBlue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="November" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="460" Padding="5" BorderColor="#EE5F80" BackgroundColor="SaddleBrown" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
+            <Frame x:Name="december" TranslationX="10" TranslationY="460" Padding="5" BorderColor="#EE5F80" BackgroundColor="SaddleBrown" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="20" Opacity=".7">
                 <Image  Source="December" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
@@ -218,73 +220,73 @@
             
             <!--days-->
 
-            <Frame  TranslationX="10" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num1a" TranslationX="10" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num1" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="36" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num1b"  TranslationX="36" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num1" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="62" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num2a"  TranslationX="62" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num2" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="88" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num2b"  TranslationX="88" TranslationY="531" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num2" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num3"  TranslationX="10" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num3" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="36" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num4"  TranslationX="36" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num4" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="62" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num5"  TranslationX="62" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num5" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="88" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num6"  TranslationX="88" TranslationY="557" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num6" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="10" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num7"   TranslationX="10" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num7" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="36" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num8"  TranslationX="36" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num8" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="62" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num9"  TranslationX="62" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num9" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="88" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="num0"  TranslationX="88" TranslationY="583" Padding="5" BorderColor="#EE5F80"   BackgroundColor="Blue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Start" HasShadow="True" CornerRadius="5"  WidthRequest="16" HeightRequest="16" Opacity=".7">
                 <Image  Source="num0" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
@@ -292,43 +294,43 @@
             </Frame>
             
             <!--weekdays-->
-            <Frame  TranslationX="-11" TranslationY="418" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="sunday" TranslationX="-11" TranslationY="418" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Sunday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="-11" TranslationY="444" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="monday" TranslationX="-11" TranslationY="444" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Monday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="-11" TranslationY="470" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="tuesday" TranslationX="-11" TranslationY="470" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Tuesday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="-11" TranslationY="496" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="wednesday" TranslationX="-11" TranslationY="496" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Wednesday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="-11" TranslationY="522" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="thursday" TranslationX="-11" TranslationY="522" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Thursday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="-11" TranslationY="548" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="friday" TranslationX="-11" TranslationY="548" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Friday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
                 </Frame.GestureRecognizers>
             </Frame>
-            <Frame  TranslationX="-11" TranslationY="574" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
+            <Frame x:Name="saturday" TranslationX="-11" TranslationY="574" Padding="5" BorderColor="#EE5F80" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True" CornerRadius="10"  WidthRequest="90" HeightRequest="16" Opacity=".7">
                 <Image  Source="Saturday" Aspect="AspectFit" />
                 <Frame.GestureRecognizers>
                     <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
@@ -337,7 +339,7 @@
 
             
             <!--weather-->
-            <Frame  TranslationX="3" TranslationY="440" Padding="5" BorderColor="#EE5F80" BackgroundColor="#EE5F80" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
+            <Frame x:Name="sunny" TranslationX="3" TranslationY="440" Padding="5" BorderColor="#EE5F80" BackgroundColor="Orange" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
                 <StackLayout Orientation="Horizontal" InputTransparent="True" Padding="0">
                     <forms:AnimationView Animation="sun.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="White"   InputTransparent="True" />
                     <Image Aspect="AspectFit" Source="Sunny" HeightRequest="24" />
@@ -347,7 +349,7 @@
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="3" TranslationY="473" Padding="5" BorderColor="#5DB0C9" BackgroundColor="Purple" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
+            <Frame x:Name="cloudy" TranslationX="3" TranslationY="473" Padding="5" BorderColor="#5DB0C9" BackgroundColor="Purple" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
                 <StackLayout Orientation="Horizontal" InputTransparent="True" Padding="0">
                     <forms:AnimationView Animation="cloudy.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="Blue"   InputTransparent="True" />
                     <Image Aspect="AspectFit" Source="Cloudy" HeightRequest="24" />
@@ -357,7 +359,7 @@
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="3" TranslationY="507" Padding="5" BorderColor="#5DB0C9" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
+            <Frame x:Name="partysunny" TranslationX="3" TranslationY="507" Padding="5" BorderColor="#5DB0C9" BackgroundColor="#EE5F80" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
                 <StackLayout Orientation="Horizontal" InputTransparent="True" Padding="0">
                     <forms:AnimationView Animation="partly-sunny.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="Blue"   InputTransparent="True" />
                     <Image Aspect="AspectFit" Source="PartlySunny" WidthRequest="90" TranslationX="-5"/>
@@ -368,7 +370,7 @@
             </Frame>
                 
                 
-            <Frame  TranslationX="3" TranslationY="540" Padding="5" BorderColor="#5DB0C9" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
+            <Frame x:Name="snow" TranslationX="3" TranslationY="540" Padding="5" BorderColor="#5DB0C9" BackgroundColor="RoyalBlue" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
                 <StackLayout Orientation="Horizontal" InputTransparent="True" Padding="0">
                     <forms:AnimationView Animation="snow.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="Blue"   InputTransparent="True" />
                     <Image Aspect="AspectFit" Source="Snow" HeightRequest="24" />
@@ -378,7 +380,7 @@
                 </Frame.GestureRecognizers>
             </Frame>
 
-            <Frame  TranslationX="3" TranslationY="573" Padding="5" BorderColor="#5DB0C9" BackgroundColor="Red" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
+            <Frame x:Name="rain" TranslationX="3" TranslationY="573" Padding="5" BorderColor="#5DB0C9" BackgroundColor="OrangeRed" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
                 <StackLayout Orientation="Horizontal" InputTransparent="True" Padding="0">
                     <forms:AnimationView Animation="rain.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="Blue"   InputTransparent="True" />
                     <Image Aspect="AspectFit" Source="Rain" HeightRequest="24" />
@@ -388,6 +390,12 @@
                 </Frame.GestureRecognizers>
             </Frame>
 
+
+            <Image TranslationX="-20" TranslationY="30" HorizontalOptions="End"  VerticalOptions="Start" Source="refresh"  HeightRequest="22" WidthRequest="22">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="RefreshTapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
 
     </Grid>

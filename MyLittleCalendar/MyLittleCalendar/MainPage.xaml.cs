@@ -15,11 +15,19 @@ namespace MyLittleCalendar
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+
+
+        Dictionary<View, (double, double)> iniPositions = new Dictionary<View, (double, double)>();
         public MainPage()
         {
             InitializeComponent();
+
+            //initialListView = movableItems.Children.ToList<View>();
         }
 
+
+       
+        
 
         SKPaint backgroundBrush = new SKPaint()
 
@@ -101,9 +109,6 @@ namespace MyLittleCalendar
             {
                 // Move view
                 case GestureStatus.Running:
-                case GestureStatus.Completed:
-
-
                     view.TranslationX = Math.Max(movableItems.X - view.X + 10, Math.Min(movableItems.X + movableItems.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
                     view.TranslationY = Math.Max(movableItems.Y - view.Y + 100, Math.Min(movableItems.Y + movableItems.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
 
@@ -112,8 +117,67 @@ namespace MyLittleCalendar
                     view.TranslationY = Math.Max(parent.Y - view.Y + 100, Math.Min(parent.Y + parent.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
                     */
                     break;
+                case GestureStatus.Completed:
+
+                    view.TranslationX = Math.Max(movableItems.X - view.X + 10, Math.Min(movableItems.X + movableItems.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
+                    view.TranslationY = Math.Max(movableItems.Y - view.Y + 100, Math.Min(movableItems.Y + movableItems.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
+
+               
+                    /*
+                    view.TranslationX = Math.Max(parent.X - view.X + 10, Math.Min(parent.X + parent.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
+                    view.TranslationY = Math.Max(parent.Y - view.Y + 100, Math.Min(parent.Y + parent.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
+                    */
+                    break;
+
 
             }
+        }
+
+        private void RefreshTapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            
+            foreach(var item in movableItems.Children)
+            {
+                var v = (View)item;
+           
+                if(IsFrame(v))
+                {
+                    var iitem = iniPositions[v];
+
+                    //item.TranslationX = iitem.X - item.X;
+                    //item.TranslationY = iitem.Y - item.Y;
+
+                    item.TranslateTo(iitem.Item1, iitem.Item2);
+                }           
+            }
+        }
+
+
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            
+            foreach(var item in movableItems.Children.ToList<View>())
+            {
+                if(IsFrame(item))
+                {
+                    iniPositions.Add(item, (item.TranslationX, item.TranslationY));
+                }
+            }
+        }
+
+     
+
+        private bool IsFrame(View item)
+        {
+            return (item == spring || item == summer || item == fall || item == winter ||
+                    item == january || item == february || item == march || item == april || item == may||item==june||item==july||item==august||item==september||item==october||item==november||item==december||
+                    item==num0||item==num1a||item==num1b||item==num2a||item==num2b||item==num3||item==num4||item==num5||item==num6||item==num7||item==num8||item==num9||
+                    item==sunday||item==monday||item==tuesday||item==wednesday||item==thursday||item==friday||item==saturday||
+                    item==sunny||item==cloudy||item==partysunny||item==snow||item==rain
+                    );
         }
 
     }
