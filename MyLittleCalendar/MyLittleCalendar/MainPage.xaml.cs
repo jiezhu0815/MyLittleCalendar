@@ -251,5 +251,351 @@ namespace MyLittleCalendar
             MoreSection.TranslateTo(0, 0, animationSpeed, Easing.SinInOut);
 
         }
+    
+        private string MovableItemToName(View item)
+        {
+            if(item==spring)
+            {
+                return "spring";
+            }
+            if (item == summer)
+            {
+                return "summer";
+            }
+            if(item==fall)
+            {
+                return "fall";
+            }
+            if(item==winter)
+            {
+                return "winter";
+            }
+
+            if(item == january)
+            {
+                return "january";
+            }
+            if (item == february)
+            {
+                return "february";
+            }
+            if (item == march)
+            {
+                return "march";
+            }
+            if (item == april)
+            {
+                return "april";
+            }
+            if (item == may)
+            {
+                return "may";
+            }
+            if (item == june)
+            {
+                return "june";
+            }
+            if (item == july)
+            {
+                return "july";
+            }
+            if (item == august)
+            {
+                return "august";
+            }
+            if (item == september)
+            {
+                return "september";
+            }
+            if (item == october)
+            {
+                return "october";
+            }
+            if (item == november)
+            {
+                return "november";
+            }
+            if (item == december)
+            {
+                return "december";
+            }
+
+
+            if (item == num0)
+            {
+                return "num0";
+            }
+            if (item == num1a)
+            {
+                return "num1a";
+            }
+            if (item == num1b)
+            {
+                return "num1b";
+            }
+            if (item == num2a)
+            {
+                return "num2a";
+            }
+            if (item == num2b)
+            {
+                return "num2b";
+            }
+            if (item == num3)
+            {
+                return "num3";
+            }
+            if (item == num4)
+            {
+                return "num4";
+            }
+            if (item == num5)
+            {
+                return "num5";
+            }
+            if (item == num6)
+            {
+                return "num6";
+            }
+            if (item == num7)
+            {
+                return "num7";
+            }
+            if (item == num8)
+            {
+                return "num8";
+            }
+            if (item == num9)
+            {
+                return "num9";
+            }
+
+
+            if (item == sunday)
+            {
+                return "sunday";
+            }
+            if (item == monday)
+            {
+                return "monday";
+            }
+            if (item == tuesday)
+            {
+                return "tuesday";
+            }
+            if (item == wednesday)
+            {
+                return "wednesday";
+            }
+            if (item == thursday)
+            {
+                return "thursday";
+            }
+            if (item == friday)
+            {
+                return "friday";
+            }
+            if (item == saturday)
+            {
+                return "saturday";
+            }
+
+
+            if (item == sunny)
+            {
+                return "sunny";
+            }
+            if (item == cloudy)
+            {
+                return "cloudy";
+            }
+            if ( item == partysunny)
+            {
+                return "partysunny";
+            }
+            if ( item == snow)
+            {
+                return "snow";
+            }
+            if (item == rain)
+            {
+                return "rain";
+            }
+           
+            return string.Empty;
+        }
+
+        private View NameToMovableItem(string item)
+        {
+            if (item == "spring")
+            {
+                return spring;
+            }
+            if (item == "summer")
+            {
+                return summer;
+            }
+            if (item == "fall")
+            {
+                return fall;
+            }
+            if (item == "winter")
+            {
+                return winter;
+            }
+
+            if (item == "january")
+            {
+                return january;
+            }
+            if (item == "february")
+            {
+                return february;
+            }
+            if (item == "march")
+            {
+                return march;
+            }
+            if (item == "april")
+            {
+                return april;
+            }
+            if (item == "may")
+            {
+                return may;
+            }
+            if (item == "june")
+            {
+                return june;
+            }
+            if (item == "july")
+            {
+                return july;
+            }
+            if (item == "august")
+            {
+                return august;
+            }
+            if (item == "september")
+            {
+                return september;
+            }
+            if (item == "october")
+            {
+                return october;
+            }
+            if (item == "november")
+            {
+                return november;
+            }
+            if (item == "december")
+            {
+                return december;
+            }
+
+
+            if (item == "num0")
+            {
+                return num0;
+            }
+            if (item == "num1a")
+            {
+                return num1a;
+            }
+            if (item == "num1b")
+            {
+                return num1b;
+            }
+            if (item == "num2a")
+            {
+                return num2a;
+            }
+            if (item == "num2b")
+            {
+                return num2b;
+            }
+            if (item == "num3")
+            {
+                return num3;
+            }
+            if (item == "num4")
+            {
+                return num4;
+            }
+            if (item == "num5")
+            {
+                return num5;
+            }
+            if (item == "num6")
+            {
+                return num6;
+            }
+            if (item == "num7")
+            {
+                return num7;
+            }
+            if (item == "num8")
+            {
+                return num8;
+            }
+            if (item == "num9")
+            {
+                return num9;
+            }
+
+
+            if (item == "sunday")
+            {
+                return sunday;
+            }
+            if (item == "monday")
+            {
+                return monday;
+            }
+            if (item == "tuesday")
+            {
+                return tuesday;
+            }
+            if (item == "wednesday")
+            {
+                return wednesday;
+            }
+            if (item == "thursday")
+            {
+                return thursday;
+            }
+            if (item == "friday")
+            {
+                return friday;
+            }
+            if (item == "saturday")
+            {
+                return saturday;
+            }
+
+
+            if (item == "sunny")
+            {
+                return sunny;
+            }
+            if (item == "cloudy")
+            {
+                return cloudy;
+            }
+            if (item == "partysunny")
+            {
+                return partysunny;
+            }
+            if (item == "snow")
+            {
+                return snow;
+            }
+            if (item == "rain")
+            {
+                return rain;
+            }
+            return null;
+        }
+    
     }
 }
