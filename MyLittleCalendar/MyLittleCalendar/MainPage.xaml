@@ -341,7 +341,7 @@
             <!--weather-->
             <Frame x:Name="sunny" TranslationX="3" TranslationY="440" Padding="5" BorderColor="#EE5F80" BackgroundColor="Orange" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="Center" HasShadow="True" CornerRadius="10"  WidthRequest="118" HeightRequest="24" Opacity=".7">
                 <StackLayout Orientation="Horizontal" InputTransparent="True" Padding="0">
-                    <forms:AnimationView Animation="sun.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="White"   InputTransparent="True" />
+                    <forms:AnimationView Animation="sun.json" Loop="True" AutoPlay="True"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28"  Speed="1"  BackgroundColor="Blue"   InputTransparent="True" />
                     <Image Aspect="AspectFit" Source="Sunny" HeightRequest="24" />
                 </StackLayout>
                 <Frame.GestureRecognizers>

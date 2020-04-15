@@ -3,9 +3,6 @@ using SkiaSharp.Views.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace MyLittleCalendar
@@ -72,7 +69,8 @@ namespace MyLittleCalendar
             iniPositions.Add(partysunny, (3, 507));
             iniPositions.Add(snow, (3, 540));
             iniPositions.Add(rain, (3, 573));
-            
+
+
         }
 
 
