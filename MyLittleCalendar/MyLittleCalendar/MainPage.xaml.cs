@@ -76,10 +76,11 @@ namespace MyLittleCalendar
         }
 
 
-       
-        
 
-        SKPaint backgroundBrush = new SKPaint()
+
+
+
+       SKPaint backgroundBrush = new SKPaint()
 
         {
 
@@ -194,16 +195,21 @@ namespace MyLittleCalendar
 
             foreach (var item in movableItems.Children)
             {
-                var v = (View)item;
+                var v = item;
            
                 if(IsMovableItem(v))
                 {
-                    var iitem = iniPositions[v];
 
-                    //item.TranslationX = iitem.X - item.X;
-                    //item.TranslationY = iitem.Y - item.Y;
+                    if(iniPositions.ContainsKey(v))
+                    {
+                        var iitem = iniPositions[v];
 
-                    item.TranslateTo(iitem.Item1, iitem.Item2);
+                        //item.TranslationX = iitem.X - item.X;
+                        //item.TranslationY = iitem.Y - item.Y;
+
+                        item.TranslateTo(iitem.Item1, iitem.Item2);
+                    }
+
                 }           
             }
         }

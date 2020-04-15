@@ -101,7 +101,7 @@
         </Frame>
 
          <!--weather-->
-        <Frame VerticalOptions="Start" TranslationY="300" HasShadow="True" CornerRadius="15" Grid.Row="1" Grid.Column="1"  Margin="20,35,10,0"  HeightRequest="200" Padding="0" Opacity=".8">
+        <Frame VerticalOptions="Start" TranslationY="300" HasShadow="True" CornerRadius="15" Grid.Row="1" Grid.Column="1"  Margin="19,35,13,0"  HeightRequest="200" Padding="0" Opacity=".8">
             <StackLayout  BackgroundColor="#5DB0C9">
                 <Image  Margin="5,5,0,0" HorizontalOptions="Start"  Source="Weather2" Aspect="AspectFit" HeightRequest="20" WidthRequest="80"/>
                 <BoxView HeightRequest="1" BackgroundColor="#E1DFD4"/>
@@ -402,16 +402,20 @@
 
         <!--TranslationY="540"-->
 
-        <Frame x:Name="MoreSection" TranslationY="540"           
-               Margin="60,120,60,120" Opacity="0" IsVisible="False" Grid.RowSpan="7" Grid.ColumnSpan="3"  Padding="0" CornerRadius="20">
+        <Frame x:Name="MoreSection"  TranslationY="540"         
+               Margin="60,120,60,120" Opacity="1" IsVisible="True" Grid.RowSpan="7" Grid.ColumnSpan="3"  Padding="0" CornerRadius="20">
             
             <StackLayout  BackgroundColor="#5DB0C9" Orientation="Vertical">
-                <Image Margin="0,50" HorizontalOptions="Center"  VerticalOptions="Start" Source="refresh"  HeightRequest="40" WidthRequest="40">
-                    <Image.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Margin="50,50,10,0" HorizontalOptions="Center"  VerticalOptions="Start" Source="refresh"  HeightRequest="40" WidthRequest="40" InputTransparent="True"/>
+
+                    <Image Margin="10,30,50,0" HorizontalOptions="Center"  VerticalOptions="Start" Source="Refresh2"  HeightRequest="80"  InputTransparent="True"/>
+                    <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="RefreshTapGestureRecognizer_Tapped"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                
+                    </StackLayout.GestureRecognizers>
+
+                </StackLayout>
+
                 
             </StackLayout>
         </Frame>

@@ -616,4 +616,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\more%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Refresh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Refresh2%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Refresh2%403x.png" />
+  </ItemGroup>
 </Project>
