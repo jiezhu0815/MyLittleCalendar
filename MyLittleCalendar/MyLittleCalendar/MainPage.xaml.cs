@@ -18,7 +18,9 @@ namespace MyLittleCalendar
 
 
         Dictionary<View, (double, double)> iniPositions = new Dictionary<View, (double, double)>();
- 
+
+        uint animationSpeed = 300;
+
         public MainPage()
         {
             InitializeComponent();
@@ -181,14 +183,20 @@ namespace MyLittleCalendar
             }
         }
 
-        private void RefreshTapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void RefreshTapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            
-            foreach(var item in movableItems.Children)
+            await MoreSection.TranslateTo(0, 540, animationSpeed, Easing.SinInOut);
+            MoreSection.Opacity = 0;
+            MoreSection.IsVisible = false;
+            await FadeBackground.FadeTo(0, animationSpeed);
+            FadeBackground.IsVisible = false;
+ 
+
+            foreach (var item in movableItems.Children)
             {
                 var v = (View)item;
            
-                if(IsFrame(v))
+                if(IsMovableItem(v))
                 {
                     var iitem = iniPositions[v];
 
@@ -218,7 +226,7 @@ namespace MyLittleCalendar
 
      
 
-        private bool IsFrame(View item)
+        private bool IsMovableItem(View item)
         {
             return (item == spring || item == summer || item == fall || item == winter ||
                     item == january || item == february || item == march || item == april || item == may||item==june||item==july||item==august||item==september||item==october||item==november||item==december||
@@ -228,5 +236,16 @@ namespace MyLittleCalendar
                     );
         }
 
+        private void MoreTapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            FadeBackground.Opacity = 0;
+            FadeBackground.IsVisible = true;
+            _ = FadeBackground.FadeTo(1, animationSpeed);
+
+            MoreSection.Opacity = 1;
+            MoreSection.IsVisible = true;
+            MoreSection.TranslateTo(0, 0, animationSpeed, Easing.SinInOut);
+
+        }
     }
 }
