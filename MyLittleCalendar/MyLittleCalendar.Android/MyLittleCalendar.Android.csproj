@@ -61,8 +61,12 @@
     <PackageReference Include="Xamarin.Forms.DebugRainbows">
       <Version>1.1.4</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Ads">
+      <Version>71.1720.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdMobRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

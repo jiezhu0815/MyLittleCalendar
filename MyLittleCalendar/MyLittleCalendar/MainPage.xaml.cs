@@ -33,31 +33,31 @@ namespace MyLittleCalendar
             iniPositions.Add(fall, (-10, 254));
             iniPositions.Add(winter, (-10, 318));
 
-            iniPositions.Add(january, (10, 130));
-            iniPositions.Add(february, (10, 160));
-            iniPositions.Add(march, (10, 190));
-            iniPositions.Add(april, (10, 220));
-            iniPositions.Add(may, (10, 250));
-            iniPositions.Add(june, (10, 280));
-            iniPositions.Add(july, (10, 310));
-            iniPositions.Add(august, (10, 340));
-            iniPositions.Add(september, (10, 370));
-            iniPositions.Add(october, (10, 400));
-            iniPositions.Add(november, (10, 430));
-            iniPositions.Add(december, (10, 460));
+            iniPositions.Add(january, (10, 120));
+            iniPositions.Add(february, (10, 150));
+            iniPositions.Add(march, (10, 180));
+            iniPositions.Add(april, (10, 210));
+            iniPositions.Add(may, (10, 240));
+            iniPositions.Add(june, (10, 270));
+            iniPositions.Add(july, (10, 300));
+            iniPositions.Add(august, (10, 330));
+            iniPositions.Add(september, (10, 360));
+            iniPositions.Add(october, (10, 390));
+            iniPositions.Add(november, (10, 420));
+            iniPositions.Add(december, (10, 450));
 
-            iniPositions.Add(num0, (10, 531));
-            iniPositions.Add(num1a, (36, 531));
-            iniPositions.Add(num1b, (62, 531));
-            iniPositions.Add(num2a, (88, 531));
-            iniPositions.Add(num2b, (10, 557));
-            iniPositions.Add(num3, (36, 557));
-            iniPositions.Add(num4, (62, 557));
-            iniPositions.Add(num5, (88, 557));
-            iniPositions.Add(num6, (10, 583));
-            iniPositions.Add(num7, (36, 583));
-            iniPositions.Add(num8, (62, 583));
-            iniPositions.Add(num9, (88, 583));
+            iniPositions.Add(num0, (10, 521));
+            iniPositions.Add(num1a, (36, 521));
+            iniPositions.Add(num1b, (62, 521));
+            iniPositions.Add(num2a, (88, 521));
+            iniPositions.Add(num2b, (10, 547));
+            iniPositions.Add(num3, (36, 547));
+            iniPositions.Add(num4, (62, 547));
+            iniPositions.Add(num5, (88, 547));
+            iniPositions.Add(num6, (10, 573));
+            iniPositions.Add(num7, (36, 573));
+            iniPositions.Add(num8, (62, 573));
+            iniPositions.Add(num9, (88, 573));
 
             iniPositions.Add(sunday, (-11, 418));
             iniPositions.Add(monday, (-11, 444));
@@ -67,11 +67,11 @@ namespace MyLittleCalendar
             iniPositions.Add(friday, (-11, 548));
             iniPositions.Add(saturday, (-11, 574));
 
-            iniPositions.Add(sunny, (3, 440));
-            iniPositions.Add(cloudy, (3, 473));
-            iniPositions.Add(partysunny, (3, 507));
-            iniPositions.Add(snow, (3, 540));
-            iniPositions.Add(rain, (3, 573));
+            iniPositions.Add(sunny, (3, 435));
+            iniPositions.Add(cloudy, (3, 468));
+            iniPositions.Add(partysunny, (3, 502));
+            iniPositions.Add(snow, (3, 535));
+            iniPositions.Add(rain, (3, 568));
 
 
         }
@@ -210,6 +210,9 @@ namespace MyLittleCalendar
                         //item.TranslationY = iitem.Y - item.Y;
 
                         item.TranslateTo(iitem.Item1, iitem.Item2);
+
+                        Preferences.Set(MovableItemToName(item), iitem.Item1 + "," + iitem.Item2);
+
                     }
 
                 }           

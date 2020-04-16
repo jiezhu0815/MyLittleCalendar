@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Lottie.Forms.Droid;
+using Android.Gms.Ads;
 
 namespace MyLittleCalendar.Droid
 {
@@ -25,6 +26,7 @@ namespace MyLittleCalendar.Droid
 
 
             AnimationViewRenderer.Init();
+            MobileAds.Initialize(ApplicationContext, AppConstants.AppId);
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
