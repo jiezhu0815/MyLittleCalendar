@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace MyLittleCalendar
 {
@@ -16,9 +17,9 @@ namespace MyLittleCalendar
 
         Dictionary<View, (double, double)> iniPositions = new Dictionary<View, (double, double)>();
 
-        Dictionary<string, string> saveValues = new Dictionary<string, string>();
+        //Dictionary<string, string> saveValues = new Dictionary<string, string>();
 
-        uint animationSpeed = 300;
+        //uint animationSpeed = 300;
 
         public MainPage()
         {
@@ -173,7 +174,8 @@ namespace MyLittleCalendar
                     view.TranslationX = Math.Max(movableItems.X - view.X + 10, Math.Min(movableItems.X + movableItems.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
                     view.TranslationY = Math.Max(movableItems.Y - view.Y + 100, Math.Min(movableItems.Y + movableItems.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
 
-               
+
+                    Preferences.Set(MovableItemToName(view), view.TranslationX + "," + view.TranslationY);
                     /*
                     view.TranslationX = Math.Max(parent.X - view.X + 10, Math.Min(parent.X + parent.Width - view.X - view.Bounds.Width - 10, view.TranslationX + e.TotalX));
                     view.TranslationY = Math.Max(parent.Y - view.Y + 100, Math.Min(parent.Y + parent.Height - view.Y - view.Bounds.Height - 50, view.TranslationY + e.TotalY));
@@ -216,19 +218,34 @@ namespace MyLittleCalendar
 
 
 
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
+          
+            foreach (var item in iniPositions.Keys)
+            {
+                var itemName = MovableItemToName(item);
 
-        //    foreach(var item in movableItems.Children.ToList<View>())
-        //    {
-        //        if(IsFrame(item))
-        //        {
-        //            iniPositions.Add(item, (item.TranslationX, item.TranslationY));
-        //        }
-        //    }
-        //}
+                if (IsMovableItem(item) && Preferences.ContainsKey(itemName))
+                {
+                    var itemValue = Preferences.Get(itemName,"novalue");
+
+                    if(itemValue!="novalue")
+                    {
+                        var itemValueArr = itemValue.Split(',');
+                        if (itemValueArr.Length > 1)
+                        {
+                            var tx =double.Parse(itemValueArr[0]);
+                            var ty = double.Parse(itemValueArr[1]);
+                            item.TranslateTo(tx, ty);
+                        }
+                        
+                    }
+
+                }
+            }
+        }
 
 
         //protected override void OnDisappearing()
