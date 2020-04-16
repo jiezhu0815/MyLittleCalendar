@@ -16,6 +16,8 @@ namespace MyLittleCalendar
 
         Dictionary<View, (double, double)> iniPositions = new Dictionary<View, (double, double)>();
 
+        Dictionary<string, string> saveValues = new Dictionary<string, string>();
+
         uint animationSpeed = 300;
 
         public MainPage()
@@ -184,13 +186,13 @@ namespace MyLittleCalendar
 
         private async void RefreshTapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await MoreSection.TranslateTo(0, 540, animationSpeed, Easing.SinInOut);
+           /* await MoreSection.TranslateTo(0, 540, animationSpeed, Easing.SinInOut);
             MoreSection.Opacity = 0;
             MoreSection.IsVisible = false;
             await FadeBackground.FadeTo(0, animationSpeed);
             FadeBackground.IsVisible = false;
  
-
+            */
             foreach (var item in movableItems.Children)
             {
                 var v = item;
@@ -218,7 +220,7 @@ namespace MyLittleCalendar
         //{
         //    base.OnAppearing();
 
-            
+
         //    foreach(var item in movableItems.Children.ToList<View>())
         //    {
         //        if(IsFrame(item))
@@ -228,7 +230,12 @@ namespace MyLittleCalendar
         //    }
         //}
 
-     
+
+        //protected override void OnDisappearing()
+        //{
+        //    base.OnDisappearing();
+
+        //}
 
         private bool IsMovableItem(View item)
         {
@@ -239,7 +246,7 @@ namespace MyLittleCalendar
                     item==sunny||item==cloudy||item==partysunny||item==snow||item==rain
                     );
         }
-
+/*
         private void MoreTapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             FadeBackground.Opacity = 0;
@@ -251,7 +258,7 @@ namespace MyLittleCalendar
             MoreSection.TranslateTo(0, 0, animationSpeed, Easing.SinInOut);
 
         }
-    
+    */
         private string MovableItemToName(View item)
         {
             if(item==spring)

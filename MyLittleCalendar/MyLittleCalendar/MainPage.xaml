@@ -391,16 +391,16 @@
             </Frame>
 
 
-            <Image TranslationX="-20" TranslationY="26" HorizontalOptions="End"  VerticalOptions="Start" Source="more"  HeightRequest="22" WidthRequest="22">
+            <Image TranslationX="-20" TranslationY="26" HorizontalOptions="End"  VerticalOptions="Start" Source="refresh"  HeightRequest="22" WidthRequest="22">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="MoreTapGestureRecognizer_Tapped"/>
+                    <TapGestureRecognizer Tapped="RefreshTapGestureRecognizer_Tapped"/>
                 </Image.GestureRecognizers>
             </Image>
         </Grid>
 
-        <Grid x:Name="FadeBackground" BackgroundColor="#CC000000" IsVisible="False" Opacity="0" Grid.RowSpan="7" Grid.ColumnSpan="3" />
+        <!--<Grid x:Name="FadeBackground" BackgroundColor="#CC000000" IsVisible="False" Opacity="0" Grid.RowSpan="7" Grid.ColumnSpan="3" />
 
-        <!--TranslationY="540"-->
+        --><!--TranslationY="540"--><!--
 
         <Frame x:Name="MoreSection"  TranslationY="540"         
                Margin="60,120,60,120" Opacity="1" IsVisible="True" Grid.RowSpan="7" Grid.ColumnSpan="3"  Padding="0" CornerRadius="20">
@@ -418,7 +418,7 @@
 
                 
             </StackLayout>
-        </Frame>
+        </Frame>-->
   
 
 
