@@ -15,7 +15,7 @@ namespace MyLittleCalendar
     {
 
 
-        Dictionary<View, (double, double)> iniPositions = new Dictionary<View, (double, double)>();
+        Dictionary<string, (double, double)> iniPositions = new Dictionary<string, (double, double)>();
 
         //Dictionary<string, string> saveValues = new Dictionary<string, string>();
 
@@ -28,50 +28,50 @@ namespace MyLittleCalendar
             //initialListView = movableItems.Children.ToList<View>();
 
         
-            iniPositions.Add(spring, (-10, 126));
-            iniPositions.Add(summer, (-10, 190));
-            iniPositions.Add(fall, (-10, 254));
-            iniPositions.Add(winter, (-10, 318));
+            iniPositions.Add("spring", (-10, 136));
+            iniPositions.Add("summer", (-10, 200));
+            iniPositions.Add("fall", (-10, 264));
+            iniPositions.Add("winter", (-10, 328));
 
-            iniPositions.Add(january, (10, 120));
-            iniPositions.Add(february, (10, 150));
-            iniPositions.Add(march, (10, 180));
-            iniPositions.Add(april, (10, 210));
-            iniPositions.Add(may, (10, 240));
-            iniPositions.Add(june, (10, 270));
-            iniPositions.Add(july, (10, 300));
-            iniPositions.Add(august, (10, 330));
-            iniPositions.Add(september, (10, 360));
-            iniPositions.Add(october, (10, 390));
-            iniPositions.Add(november, (10, 420));
-            iniPositions.Add(december, (10, 450));
+            iniPositions.Add("january", (10, 130));
+            iniPositions.Add("february", (10, 160));
+            iniPositions.Add("march", (10, 190));
+            iniPositions.Add("april", (10, 220));
+            iniPositions.Add("may", (10, 250));
+            iniPositions.Add("june", (10, 280));
+            iniPositions.Add("july", (10, 310));
+            iniPositions.Add("august", (10, 340));
+            iniPositions.Add("september", (10, 370));
+            iniPositions.Add("october", (10, 400));
+            iniPositions.Add("november", (10, 430));
+            iniPositions.Add("december", (10, 460));
 
-            iniPositions.Add(num0, (10, 521));
-            iniPositions.Add(num1a, (36, 521));
-            iniPositions.Add(num1b, (62, 521));
-            iniPositions.Add(num2a, (88, 521));
-            iniPositions.Add(num2b, (10, 547));
-            iniPositions.Add(num3, (36, 547));
-            iniPositions.Add(num4, (62, 547));
-            iniPositions.Add(num5, (88, 547));
-            iniPositions.Add(num6, (10, 573));
-            iniPositions.Add(num7, (36, 573));
-            iniPositions.Add(num8, (62, 573));
-            iniPositions.Add(num9, (88, 573));
+            iniPositions.Add("num0", (10, 531));
+            iniPositions.Add("num1a", (36, 531));
+            iniPositions.Add("num1b", (62, 531));
+            iniPositions.Add("num2a", (88, 531));
+            iniPositions.Add("num2b", (10, 557));
+            iniPositions.Add("num3", (36, 557));
+            iniPositions.Add("num4", (62, 557));
+            iniPositions.Add("num5", (88, 557));
+            iniPositions.Add("num6", (10, 583));
+            iniPositions.Add("num7", (36, 583));
+            iniPositions.Add("num8", (62, 583));
+            iniPositions.Add("num9", (88, 583));
 
-            iniPositions.Add(sunday, (-11, 418));
-            iniPositions.Add(monday, (-11, 444));
-            iniPositions.Add(tuesday, (-11, 470));
-            iniPositions.Add(wednesday, (-11, 496));
-            iniPositions.Add(thursday, (-11, 522));
-            iniPositions.Add(friday, (-11, 548));
-            iniPositions.Add(saturday, (-11, 574));
+            iniPositions.Add("sunday", (-11, 428));
+            iniPositions.Add("monday", (-11, 454));
+            iniPositions.Add("tuesday", (-11, 480));
+            iniPositions.Add("wednesday", (-11, 506));
+            iniPositions.Add("thursday", (-11, 532));
+            iniPositions.Add("friday",(-11, 558));
+            iniPositions.Add("saturday", (-11, 584));
 
-            iniPositions.Add(sunny, (3, 435));
-            iniPositions.Add(cloudy, (3, 468));
-            iniPositions.Add(partysunny, (3, 502));
-            iniPositions.Add(snow, (3, 535));
-            iniPositions.Add(rain, (3, 568));
+            iniPositions.Add("sunny", (3, 445));
+            iniPositions.Add("cloudy", (3, 478));
+            iniPositions.Add("partysunny", (3, 512));
+            iniPositions.Add("snow", (3, 545));
+            iniPositions.Add("rain", (3, 578));
 
 
         }
@@ -197,9 +197,9 @@ namespace MyLittleCalendar
             */
             foreach (var item in movableItems.Children)
             {
-                var v = item;
+                var v = MovableItemToName(item);
            
-                if(IsMovableItem(v))
+                if(IsMovableItem(item))
                 {
 
                     if(iniPositions.ContainsKey(v))
@@ -226,11 +226,10 @@ namespace MyLittleCalendar
             base.OnAppearing();
 
           
-            foreach (var item in iniPositions.Keys)
+            foreach (var itemName in iniPositions.Keys)
             {
-                var itemName = MovableItemToName(item);
-
-                if (IsMovableItem(item) && Preferences.ContainsKey(itemName))
+       
+                if (Preferences.ContainsKey(itemName))
                 {
                     var itemValue = Preferences.Get(itemName,"novalue");
 
@@ -241,6 +240,7 @@ namespace MyLittleCalendar
                         {
                             var tx =double.Parse(itemValueArr[0]);
                             var ty = double.Parse(itemValueArr[1]);
+                            var item = NameToMovableItem(itemName);
                             item.TranslateTo(tx, ty);
                         }
                         
