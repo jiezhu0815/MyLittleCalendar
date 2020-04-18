@@ -27,7 +27,11 @@
             </Grid.ColumnDefinitions>
 
             <Image Grid.Column="1" HorizontalOptions="CenterAndExpand"  Source="title" VerticalOptions="Center" Scale="1"/>
-            <Image Grid.Column="2" HorizontalOptions="CenterAndExpand"  Source="refresh" VerticalOptions="CenterAndExpand"/>
+            <Image Grid.Column="2" HorizontalOptions="CenterAndExpand"  Source="refresh" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="RefreshTapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
         <Image x:Name="subtitle"  Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start" 
                Source="subtitle" Scale="1.2"/>
