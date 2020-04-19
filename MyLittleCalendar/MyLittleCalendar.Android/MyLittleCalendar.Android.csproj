@@ -43,6 +43,14 @@
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\JieZh\AppData\Local\Xamarin\Mono for Android\Keystore\mylittlecalendar\mylittlecalendar.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>977819</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>mylittlecalendar</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>977819</AndroidSigningKeyPass>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -74,16 +82,337 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\cloudy.json" />
-    <AndroidAsset Include="Assets\foggy.json" />
     <AndroidAsset Include="Assets\partly-sunny.json" />
     <AndroidAsset Include="Assets\rain.json" />
-    <AndroidAsset Include="Assets\rain2.json" />
     <AndroidAsset Include="Assets\snow.json" />
-    <AndroidAsset Include="Assets\snow2.json" />
     <AndroidAsset Include="Assets\sun.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable-ldpi\April.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\April.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\April.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\April.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\April.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\April.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\August.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Cloudy.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Day.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Days.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\December.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\fall.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\February.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\framelace.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Friday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\January.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\July.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\June.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\March.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\May.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Monday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Month.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Months.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\November.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num0.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num1.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num2.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num3.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num4.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num5.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num6.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num7.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num8.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\num9.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\October.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\PartlySunny.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Rain.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\refresh.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Saturday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Season.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Seasons.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\September.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Snow.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\spring.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\subtitle.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\summer.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Sunday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Sunny.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Thursday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\title.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Tuesday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Weather.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Weather2.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Wednesday.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\WeekDay.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\WeekDays.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\winter.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Year.webp" />
+    <AndroidResource Include="Resources\drawable-hdpi\Years.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\August.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Cloudy.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Day.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Days.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\December.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\fall.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\February.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\framelace.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Friday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\January.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\July.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\June.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\March.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\May.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Monday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Month.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Months.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\November.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num0.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num1.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num2.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num3.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num4.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num5.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num6.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num7.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num8.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\num9.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\October.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\PartlySunny.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Rain.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\refresh.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Saturday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Season.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Seasons.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\September.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Snow.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\spring.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\subtitle.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\summer.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Sunday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Sunny.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Thursday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\title.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Tuesday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Weather.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Weather2.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Wednesday.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\WeekDay.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\WeekDays.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\winter.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Year.webp" />
+    <AndroidResource Include="Resources\drawable-ldpi\Years.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\August.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Cloudy.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Day.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Days.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\December.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\fall.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\February.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\framelace.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Friday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\January.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\July.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\June.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\March.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\May.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Monday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Month.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Months.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\November.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num0.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num1.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num2.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num3.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num4.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num5.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num6.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num7.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num8.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\num9.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\October.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\PartlySunny.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Rain.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\refresh.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Saturday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Season.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Seasons.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\September.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Snow.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\spring.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\subtitle.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\summer.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Sunday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Sunny.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Thursday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\title.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Tuesday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Weather.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Weather2.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Wednesday.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\WeekDay.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\WeekDays.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\winter.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Year.webp" />
+    <AndroidResource Include="Resources\drawable-mdpi\Years.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\August.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Cloudy.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Day.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Days.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\December.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\fall.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\February.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\framelace.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Friday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\January.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\July.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\June.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\March.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\May.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Monday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Month.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Months.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\November.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num0.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num1.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num2.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num3.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num4.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num5.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num6.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num7.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num8.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\num9.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\October.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\PartlySunny.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Rain.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\refresh.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Saturday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Season.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Seasons.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\September.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Snow.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spring.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\subtitle.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\summer.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Sunday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Sunny.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Thursday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\title.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Tuesday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Weather.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Weather2.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Wednesday.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\WeekDay.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\WeekDays.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\winter.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Year.webp" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Years.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\August.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Cloudy.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Day.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Days.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\December.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\fall.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\February.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\framelace.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Friday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\January.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\July.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\June.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\March.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\May.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Monday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Month.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Months.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\November.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num0.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num1.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num2.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num3.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num4.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num5.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num6.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num7.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num8.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\num9.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\October.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\PartlySunny.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Rain.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\refresh.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Saturday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Season.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Seasons.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\September.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Snow.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spring.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\subtitle.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\summer.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Sunday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Sunny.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Thursday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\title.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Tuesday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Weather.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Weather2.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Wednesday.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\WeekDay.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\WeekDays.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\winter.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Year.webp" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Years.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\August.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Cloudy.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Day.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Days.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\December.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\fall.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\February.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\framelace.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Friday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\January.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\July.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\June.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\March.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\May.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Monday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Month.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Months.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\November.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num0.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num1.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num2.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num3.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num4.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num5.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num6.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num7.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num8.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\num9.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\October.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\PartlySunny.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Rain.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\refresh.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Saturday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Season.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Seasons.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\September.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Snow.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\spring.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\subtitle.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\summer.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Sunday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Sunny.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Thursday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\title.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Tuesday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Weather.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Weather2.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Wednesday.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\WeekDay.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\WeekDays.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\winter.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Year.webp" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Years.webp" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.xml" />
@@ -121,1014 +450,6 @@
       <Project>{1B1EF17F-3844-4DB7-81BE-162A7B5DBB79}</Project>
       <Name>MyLittleCalendar</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\framelace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\framelace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\framelace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\framelace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\framelace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\framelace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\title.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\subtitle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\subtitle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\subtitle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\subtitle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\subtitle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\subtitle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Day.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Month.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\WeekDays.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Year.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Day.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Month.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\WeekDays.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Year.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Day.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Month.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\WeekDays.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Year.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Day.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Month.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\WeekDays.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Year.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Day.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Month.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\WeekDays.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Year.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Day.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Month.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\WeekDays.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Year.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Season.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Season.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Season.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Season.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Season.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Season.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Days.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Months.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\WeekDay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Years.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Days.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Months.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\WeekDay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Years.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Days.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Months.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\WeekDay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Years.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Days.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Months.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\WeekDay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Years.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Days.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Months.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\WeekDay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Years.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Days.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Months.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\WeekDay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Years.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Weather2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Weather2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Weather2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Weather2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Weather2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Weather2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Seasons.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Seasons.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Seasons.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Seasons.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Seasons.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Seasons.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\spring.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\summer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\winter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\fall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\fall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\spring.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\summer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\winter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\fall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\spring.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\summer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\winter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\fall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\spring.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\summer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\winter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\fall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\spring.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\summer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\winter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\fall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\spring.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\summer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\winter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\April.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\August.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\December.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\February.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Friday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\January.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\July.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\June.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\March.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\May.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Monday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\November.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\October.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Saturday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\September.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Sunday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Thursday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Tuesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Wednesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\April.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\August.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\December.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\February.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Friday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\January.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\July.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\June.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\March.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\May.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Monday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\November.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\October.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Saturday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\September.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Sunday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Thursday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Tuesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Wednesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\April.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\August.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\December.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\February.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Friday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\January.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\July.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\June.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\March.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\May.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Monday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\November.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\October.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Saturday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\September.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Sunday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Thursday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Tuesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Wednesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\April.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\August.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\December.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\February.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Friday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\January.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\July.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\June.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\March.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\May.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Monday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\October.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Saturday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\November.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\September.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Sunday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Thursday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Tuesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Wednesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\April.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\August.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\December.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\February.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Friday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\January.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\July.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\June.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\March.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\May.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Monday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\November.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\October.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Saturday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\September.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Sunday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Thursday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Tuesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Wednesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\April.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\August.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\December.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\February.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Friday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\January.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\July.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\June.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\March.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\May.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Monday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\November.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\October.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Saturday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\September.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Sunday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Thursday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Tuesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Wednesday.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\num9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\num9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\num9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\num9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\num9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\num9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Cloudy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Rain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Snow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Cloudy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Rain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Snow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Cloudy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Rain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Snow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Cloudy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Rain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Snow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Cloudy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Rain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Snow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Cloudy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Rain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Snow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\PartlySunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\PartlySunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\PartlySunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\PartlySunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\PartlySunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\PartlySunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\refresh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\more.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\more.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\more.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\more.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\more.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\more.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Refresh2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-ldpi\Refresh2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\Refresh2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Refresh2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Refresh2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Refresh2.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
