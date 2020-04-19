@@ -7,10 +7,10 @@
              x:Class="MyLittleCalendar.App">
     <Application.Resources>
 
-        <OnPlatform x:TypeArguments="x:String" x:Key="TitleFontFamily">
+        <!--<OnPlatform x:TypeArguments="x:String" x:Key="TitleFontFamily">
             <On Platform="Android" Value="FORTE.TTF#Forte" />
             <On Platform="iOS" Value="FORTE" />
-        </OnPlatform>
+        </OnPlatform>-->
 
         <!--BackgroundGradients-->
         <Color x:Key="BackgroundGradientStartColor">#A5CFE8</Color>
@@ -18,7 +18,7 @@
         <Color x:Key="BackgroundGradientEndColor">#4AC4C3</Color>
 
 
-        <Style x:Key="SubTitleStyle" TargetType="Label">
+        <!--<Style x:Key="SubTitleStyle" TargetType="Label">
 
             <Setter Property="FontFamily" Value="{StaticResource TitleFontFamily}" />
             <Setter Property="FontSize" Value="18" />
@@ -35,7 +35,7 @@
             <Setter Property="TextColor" Value="White" />
             <Setter Property="FontFamily" Value="{StaticResource BodyFontFamily}" />
             <Setter Property="FontSize" Value="18" />
-        </Style>
+        </Style>-->
         
         
     </Application.Resources>
