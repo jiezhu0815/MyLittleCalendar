@@ -5,11 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:controls="clr-namespace:MyLittleCalendar.Controls"
              x:Class="MyLittleCalendar.MainPage">
 
-    <Grid rainbows:DebugRainbow.ShowColors="False" RowSpacing="0">
+    <Grid  RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
             <RowDefinition Height=".8*"/>
@@ -120,7 +119,7 @@
             </Grid>
 
 
-            <AbsoluteLayout Grid.ColumnSpan="3" x:Name="movableItems" rainbows:DebugRainbow.ShowColors="False">
+            <AbsoluteLayout Grid.ColumnSpan="3" x:Name="movableItems" >
                 
                 <!--month-->
                 <Frame  x:Name="january" 
@@ -672,7 +671,7 @@
                 </Frame>
             </AbsoluteLayout>
         </Grid>
-        <controls:AdmobControl Grid.Row="3"  rainbows:DebugRainbow.ShowColors="False" AdUnitId="ca-app-pub-5188063035353381/2791414487" VerticalOptions="End" HorizontalOptions="Fill"/>
+        <controls:AdmobControl Grid.Row="3"   AdUnitId="ca-app-pub-5188063035353381/2791414487" VerticalOptions="End" HorizontalOptions="Fill"/>
     </Grid>
 
 
