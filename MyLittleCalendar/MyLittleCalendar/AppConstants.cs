@@ -16,7 +16,7 @@ namespace MyLittleCalendar
                     case Device.Android:
                         return "ca-app-pub-5188063035353381~5334457979";
                     default:
-                        return "ca-app-pub-5188063035353381~5334457979";
+                        return "ca-app-pub-5188063035353381~6401274788";
                 }
             }
         }
@@ -33,7 +33,7 @@ namespace MyLittleCalendar
                         return "ca-app-pub-5188063035353381/2791414487";
                     //return "ca-app-pub-5188063035353381/2791414487";
                     default:
-                        return "ca-app-pub-5188063035353381/2791414487";
+                        return "ca-app-pub-5188063035353381/8835866435";
                 }
             }
         }

@@ -40,5 +40,16 @@
     <array>
     <string>FORTE.TTF</string>
     </array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    <key>NSAllowsArbitraryLoadsForMedia</key>
+    <true/>
+    <key>NSAllowsArbitraryLoadsInWebContent</key>
+    <true/>
+    <key>GADApplicationIdentifier</key>
+    <string>ca-app-pub-5188063035353381~6401274788</string>
+</dict>
 </dict>
 </plist>

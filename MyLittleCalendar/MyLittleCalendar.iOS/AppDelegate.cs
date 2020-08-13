@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Google.MobileAds;
 using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
@@ -34,11 +35,13 @@ namespace MyLittleCalendar.iOS
             }
 
             global::Xamarin.Forms.Forms.Init();
-
+            Google.MobileAds.MobileAds.Configure(AppConstants.AppId);
+            //MobileAds.SharedInstance.Start(CompletionHandler);
             AnimationViewRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
         }
+        //private void CompletionHandler(InitializationStatus status) { }
     }
 }
